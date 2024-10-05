@@ -1,7 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Library from './pages/Library';
-import Navbar from './components/Navbar';
+import Form from './components/Form';
+import './App.css';
 
 function App() {
     return (
@@ -11,6 +13,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/library" element={<Library />} />
+                    <Route path="/form" element={<Form />} />
                 </Routes>
             </div>
         </Router>
